@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fafafa;
+}
+
+.hero {
+  background: linear-gradient(135deg, #fdd4a1, #f7a8c9);
+  padding: 3rem 1.5rem;
+}
+
+.hero__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero__subtitle {
+  max-width: 560px;
+  margin: 0 auto 1.5rem;
+  color: #333;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hero__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+  max-width: 960px;
+  padding: 2.5rem 1.5rem 3rem;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cards__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 240px;
+  max-width: 300px;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card__text {
+  margin: 0;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .hero__title {
+    font-size: 1.6rem;
+  }
+
+  .content {
+    padding: 2rem 1rem 2.5rem;
+  }
+}
